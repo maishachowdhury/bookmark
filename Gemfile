@@ -6,6 +6,9 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
+# gem 'capybara', group: :test
+# gem 'rspec', group: :test
+
 group :test do
   gem 'sinatra'
   gem 'capybara'
@@ -15,6 +18,7 @@ group :test do
   gem 'webrick'
   gem 'sinatra-contrib'
   gem 'launchy'
+  gem 'pg'
 end
 
 group :development, :test do
